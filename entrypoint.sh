@@ -20,5 +20,7 @@ fi
 git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
+ls -la
+
 git tag -a "${tag}" "${ref}" -m "${message}" ${force}
 git push origin "${tag}" "$force"
